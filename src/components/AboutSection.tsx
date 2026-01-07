@@ -14,23 +14,27 @@ const AboutSection = () => {
         <span className="text-primary font-normal">01.</span> Sobre Mim
       </h2>
 
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
-            Olá! Sou <span className="text-foreground font-medium">Nicolas</span>, um profissional de TI 
-            apaixonado por tecnologia e desenvolvimento de software. Com experiência em diversas áreas 
-            da tecnologia, busco sempre criar soluções eficientes e inovadoras.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Minha jornada na área de TI me permitiu trabalhar com diferentes tecnologias e 
-            metodologias, sempre focando em entregar resultados de qualidade e agregar valor 
-            aos projetos que participo.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            Quando não estou codando, gosto de explorar novas tecnologias, contribuir para 
-            projetos open source e compartilhar conhecimento com a comunidade.
-          </p>
-        </div>
+<div className="grid md:grid-cols-2 gap-12 items-center">
+  <div className="space-y-6">
+    <p className="text-muted-foreground leading-relaxed">
+      Olá! Sou <span className="text-foreground font-medium">Nicolas</span>, profissional de TI em uma multinacional e desenvolvedor Fullstack apaixonado por transformar desafios em soluções escaláveis. 
+    </p>
+    
+    <p className="text-muted-foreground leading-relaxed">
+      Com experiência sólida em <span className="text-foreground">Frontend, Backend e Bancos de Dados</span>, foco em unir visão técnica e senso de solução para entregar aplicações seguras e eficientes, sempre priorizando a qualidade e a inovação em cada linha de código.
+    </p>
+
+    <p className="text-muted-foreground leading-relaxed">
+      Minha jornada é marcada pela evolução constante: compartilho meus projetos no GitHub — desde sistemas complexos a sites corporativos — e contribuo para o ecossistema de tecnologia através de projetos open source e troca de conhecimento com a comunidade.
+    </p>
+
+    <p className="text-muted-foreground leading-relaxed">
+      Estou sempre em busca de expandir minha influência na área e conectar-me a projetos que valorizam colaboração, desenvolvimento contínuo e tecnologia de ponta.
+    </p>
+  </div>
+  
+  {/* Aqui entraria sua imagem ou ilustração decorativa na segunda coluna do grid */}
+</div>
 
         <div className="grid grid-cols-2 gap-4">
           {skills.map((skill, index) => (
