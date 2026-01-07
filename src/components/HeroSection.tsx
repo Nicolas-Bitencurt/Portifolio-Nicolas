@@ -29,7 +29,7 @@ const HeroSection = () => {
         </p>
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
-          <span className="gradient-text">Nicolas</span>
+          <span className="gradient-text">Nicolas Bitencurt</span>
         </h1>
         
         <div className="font-mono text-lg md:text-2xl text-muted-foreground mb-8 animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
@@ -47,12 +47,6 @@ const HeroSection = () => {
             className="px-8 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300"
           >
             Ver Projetos
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-3 border border-primary text-primary font-medium rounded-lg hover:bg-primary/10 transition-all duration-300"
-          >
-            Contato
           </a>
         </div>
       </div>

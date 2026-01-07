@@ -1,10 +1,10 @@
 import { Code2, Server, Database, Smartphone } from "lucide-react";
 
 const skills = [
-  { icon: Code2, label: "Frontend", description: "React, TypeScript, Tailwind" },
-  { icon: Server, label: "Backend", description: "Node.js, Python, APIs" },
-  { icon: Database, label: "Database", description: "PostgreSQL, MongoDB" },
-  { icon: Smartphone, label: "Mobile", description: "React Native, Flutter" },
+  { icon: Code2, label: "Frontend", description: "React, CSS, TypeScript, Tailwind" },
+  { icon: Server, label: "Backend", description: "Node.js, Python, Java, APIs" },
+  { icon: Database, label: "Database", description: "PostgreSQL, MongoDB, MySQL, Docker" },
+  { icon: Smartphone, label: "Mobile", description: "Flutter, Dart" },
 ];
 
 const AboutSection = () => {

@@ -10,11 +10,10 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Sistema de Gestão",
-    description: "Aplicação web completa para gestão empresarial com dashboard interativo e relatórios em tempo real.",
-    technologies: ["React", "Node.js", "PostgreSQL", "Docker"],
-    github: "#",
-    demo: "#",
+    title: "Projeto API Biblioteca",
+    description: "Uma aplicação RESTful completa para gerenciamento de biblioteca desenvolvida em Java com Spring Boot 3.5.8, incluindo autenticação JWT, Swagger, migrations com Flyway e segurança implementada.",
+    technologies: ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+    github: "https://github.com/Nicolas-Bitencurt/Projeto_API_Biblioteca",
   },
   {
     title: "E-commerce Platform",

@@ -5,8 +5,6 @@ import { Link, useLocation } from "react-router-dom";
 const navItems = [
   { label: "Home", href: "/", isAnchor: false },
   { label: "Projetos", href: "/projects", isAnchor: false },
-  { label: "Sobre", href: "#about", isAnchor: true },
-  { label: "Contato", href: "#contact", isAnchor: true },
 ];
 
 const Navbar = () => {

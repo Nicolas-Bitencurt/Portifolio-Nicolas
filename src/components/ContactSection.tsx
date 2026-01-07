@@ -1,17 +1,16 @@
 import { Github, Linkedin, Mail, Twitter, Send } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com", username: "@nicolas" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", username: "/in/nicolas" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com", username: "@nicolas" },
-  { icon: Mail, label: "Email", href: "mailto:nicolas@email.com", username: "nicolas@email.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Nicolas-Bitencurt", username: "Nicolas-Bitencurt" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/nicolas-bitencurt/", username: "Nicolas Bitencurt" },
+  { icon: Mail, label: "Email", href: "mailto:nicolasbitencurt6@gmail.com", username: "nicolasbitencurt6@gmail.com" },
 ];
 
 const ContactSection = () => {
   return (
     <section id="contact" className="section-container">
       <h2 className="section-title">
-        <span className="text-primary font-normal">03.</span> Contato
+        <span className="text-primary font-normal">02.</span> Contato
       </h2>
 
       <div className="max-w-2xl mx-auto text-center">
