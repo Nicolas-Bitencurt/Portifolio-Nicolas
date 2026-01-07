@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         <div className="flex gap-4 justify-center animate-fade-in opacity-0" style={{ animationDelay: "1s" }}>
           <a
-            href="Projects"
+            href="/projects"
             className="px-8 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300"
           >
             Ver Projetos

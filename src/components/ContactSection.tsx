@@ -13,20 +13,21 @@ const ContactSection = () => {
         <span className="text-primary font-normal">02.</span> Contato
       </h2>
 
-      <div className="max-w-2xl mx-auto text-center">
-        <p className="text-muted-foreground text-lg mb-12">
+      <div className="max-w-4xl mx-auto text-center"> {/* Aumentei um pouco o max-w para os cards respirarem */}
+        <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
           Estou sempre aberto a novas oportunidades e conexões. Sinta-se à vontade para entrar em 
           contato comigo através das redes sociais ou por e-mail!
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        {/* ALTERAÇÃO AQUI: De grid para flex e justify-center */}
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           {socialLinks.map((link, index) => (
             <a
               key={link.label}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass rounded-xl p-6 hover-lift group text-center"
+              className="glass rounded-xl p-6 hover-lift group text-center min-w-[160px] flex-1 sm:flex-none"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <link.icon className="w-8 h-8 text-primary mx-auto mb-3 group-hover:animate-pulse-glow transition-all" />
@@ -37,7 +38,7 @@ const ContactSection = () => {
         </div>
 
         <a
-          href="mailto:nicolas@email.com"
+          href="mailto:nicolasbitencurt6@gmail.com"
           className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300 text-lg"
         >
           <Send size={20} />
@@ -47,5 +48,7 @@ const ContactSection = () => {
     </section>
   );
 };
+
+export default ContactSection;
 
 export default ContactSection;
