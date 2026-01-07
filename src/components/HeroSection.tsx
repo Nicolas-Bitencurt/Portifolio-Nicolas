@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const [showCursor, setShowCursor] = useState(true);
 
   useEffect(() => {
@@ -13,6 +15,10 @@ const HeroSection = () => {
 
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const goToProjects = () => {
+    navigate("/projects");
   };
 
   return (
@@ -42,12 +48,12 @@ const HeroSection = () => {
         </p>
 
         <div className="flex gap-4 justify-center animate-fade-in opacity-0" style={{ animationDelay: "1s" }}>
-          <a
-            href="/projects"
-            className="px-8 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300"
+          <button
+            onClick={goToProjects}
+            className="px-8 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300 cursor-pointer"
           >
             Ver Projetos
-          </a>
+          </button>
         </div>
       </div>
 
