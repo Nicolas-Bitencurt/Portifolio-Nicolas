@@ -14,9 +14,9 @@ const AboutSection = () => {
         <span className="text-primary font-normal">01.</span> Sobre Mim
       </h2>
 
-      <div className="max-w-4xl mx-auto mb-12">
-        <div className="space-y-6">
-          <p className="text-muted-foreground leading-relaxed">
+      <div className="max-w-4xl mx-auto mb-8 sm:mb-12 px-4 sm:px-0">
+        <div className="space-y-4 sm:space-y-6">
+          <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">
             Olá! Sou <span className="text-foreground font-medium">Nicolas</span>, profissional de TI em uma multinacional e desenvolvedor Fullstack apaixonado por transformar desafios em soluções escaláveis. 
           </p>
           
@@ -34,16 +34,16 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 px-4 sm:px-0">
           {skills.map((skill, index) => (
             <div
               key={skill.label}
-              className="glass rounded-xl p-6 hover-lift group cursor-default"
+              className="glass rounded-xl p-3 sm:p-6 hover-lift group cursor-default"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <skill.icon className="w-8 h-8 text-primary mb-4 group-hover:text-glow transition-all" />
-              <h3 className="font-mono font-semibold text-foreground mb-1">{skill.label}</h3>
-              <p className="text-sm text-muted-foreground">{skill.description}</p>
+              <skill.icon className="w-6 sm:w-8 h-6 sm:h-8 text-primary mb-2 sm:mb-4 group-hover:text-glow transition-all" />
+              <h3 className="font-mono font-semibold text-xs sm:text-base text-foreground mb-1">{skill.label}</h3>
+              <p className="text-xs text-muted-foreground">{skill.description}</p>
             </div>
           ))}
         </div>

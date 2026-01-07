@@ -52,7 +52,7 @@ const projects: Project[] = [
 const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return (
     <div
-      className="glass rounded-xl p-6 hover-lift group relative overflow-hidden"
+      className="glass rounded-xl p-4 sm:p-6 hover-lift group relative overflow-hidden"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       {/* Hover glow effect */}
@@ -60,15 +60,15 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
       
       <div className="relative z-10">
         <div className="flex items-center justify-between mb-4">
-          <Folder className="w-10 h-10 text-primary" />
-          <div className="flex gap-3">
+          <Folder className="w-7 sm:w-10 h-7 sm:h-10 text-primary" />
+          <div className="flex gap-2 sm:gap-3">
             {project.github && (
               <a
                 href={project.github}
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
-                <Github size={20} />
+                <Github size={18} className="sm:w-5 sm:h-5" />
               </a>
             )}
             {project.demo && (
@@ -77,17 +77,17 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Demo"
               >
-                <ExternalLink size={20} />
+                <ExternalLink size={18} className="sm:w-5 sm:h-5" />
               </a>
             )}
           </div>
         </div>
 
-        <h3 className="font-mono font-semibold text-xl text-foreground mb-3 group-hover:text-primary transition-colors">
+        <h3 className="font-mono font-semibold text-base sm:text-xl text-foreground mb-3 group-hover:text-primary transition-colors">
           {project.title}
         </h3>
 
-        <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+        <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-4 sm:mb-6">
           {project.description}
         </p>
 
@@ -113,7 +113,7 @@ const ProjectsSection = () => {
         <span className="text-primary font-normal">02.</span> Projetos
       </h2>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
         {projects.map((project, index) => (
           <ProjectCard key={project.title} project={project} index={index} />
         ))}

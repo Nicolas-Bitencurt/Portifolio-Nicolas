@@ -13,25 +13,24 @@ const ContactSection = () => {
         <span className="text-primary font-normal">02.</span> Contato
       </h2>
 
-      <div className="max-w-4xl mx-auto text-center"> {/* Aumentei um pouco o max-w para os cards respirarem */}
-        <p className="text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
+      <div className="max-w-4xl mx-auto text-center px-4 sm:px-0">
+        <p className="text-xs sm:text-sm md:text-lg text-muted-foreground mb-8 sm:mb-12 max-w-2xl mx-auto">
           Estou sempre aberto a novas oportunidades e conexões. Sinta-se à vontade para entrar em 
           contato comigo através das redes sociais ou por e-mail!
         </p>
 
-        {/* ALTERAÇÃO AQUI: De grid para flex e justify-center */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12">
           {socialLinks.map((link, index) => (
             <a
               key={link.label}
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="glass rounded-xl p-6 hover-lift group text-center min-w-[160px] flex-1 sm:flex-none"
+              className="glass rounded-xl p-4 sm:p-6 hover-lift group text-center min-w-[140px] sm:min-w-[160px] flex-1 sm:flex-none"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <link.icon className="w-8 h-8 text-primary mx-auto mb-3 group-hover:animate-pulse-glow transition-all" />
-              <h3 className="font-medium text-foreground mb-1">{link.label}</h3>
+              <link.icon className="w-6 sm:w-8 h-6 sm:h-8 text-primary mx-auto mb-2 sm:mb-3 group-hover:animate-pulse-glow transition-all" />
+              <h3 className="text-xs sm:text-sm font-medium text-foreground mb-1">{link.label}</h3>
               <p className="text-xs text-muted-foreground font-mono">{link.username}</p>
             </a>
           ))}
@@ -39,9 +38,9 @@ const ContactSection = () => {
 
         <a
           href="mailto:nicolasbitencurt6@gmail.com"
-          className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300 text-lg"
+          className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-2 sm:py-4 bg-primary text-primary-foreground font-medium rounded-lg hover-lift box-glow hover:box-glow-strong transition-all duration-300 text-xs sm:text-lg"
         >
-          <Send size={20} />
+          <Send size={18} className="sm:w-5 sm:h-5" />
           Vamos Conversar
         </a>
       </div>
