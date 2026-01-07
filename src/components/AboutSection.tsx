@@ -36,7 +36,7 @@ const AboutSection = () => {
   {/* Aqui entraria sua imagem ou ilustração decorativa na segunda coluna do grid */}
 </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 mt-12">
           {skills.map((skill, index) => (
             <div
               key={skill.label}
