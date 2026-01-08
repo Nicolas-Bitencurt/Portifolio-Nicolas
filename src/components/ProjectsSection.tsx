@@ -38,7 +38,7 @@ const projects: Project[] = [
     title: "Flutter Store",
     description: "Um aplicativo móvel de e-commerce desenvolvido com Flutter, apresentando uma interface amigável e funcionalidades essenciais para compras online.",
     technologies: ["Flutter", "Dart", "C++", "Swift"],
-    demo: "https://github.com/Nicolas-Bitencurt/Avalia-o_Flutter",
+    github: "https://github.com/Nicolas-Bitencurt/Avalia-o_Flutter",
   },
 ];
 
