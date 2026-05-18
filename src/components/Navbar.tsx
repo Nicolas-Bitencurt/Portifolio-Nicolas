@@ -27,11 +27,11 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-mono text-xl font-bold">
+        <Link to="/" className="font-mono text-xl font-bold">
           <span className="text-primary">&lt;</span>
           <span className="text-foreground">N</span>
           <span className="text-primary">/&gt;</span>
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">

@@ -20,7 +20,7 @@ const projects: Project[] = [
     description: "Uma aplicação web para gerenciar o controle de entrada e saída de veículos em um estacionamento.",
     technologies: ["JavaScript", "React", "CSS"],
     github: "https://github.com/Nicolas-Bitencurt/Controle-de-Estacionamento-",
-    demo: "estacionecomreact.netlify.app",
+    demo: "https://estacionecomreact.netlify.app",
   },
   {
     title: "TicTocToe - Jogo da Velha",
@@ -58,6 +58,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             {project.github && (
               <a
                 href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="GitHub"
               >
@@ -67,6 +69,8 @@ const ProjectCard = ({ project, index }: { project: Project; index: number }) =>
             {project.demo && (
               <a
                 href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Demo"
               >
@@ -103,7 +107,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="section-container">
       <h2 className="section-title">
-        <span className="text-primary font-normal">02.</span> Projetos
+        <span className="text-primary font-normal">01.</span> Projetos
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0">
